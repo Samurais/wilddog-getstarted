@@ -3,4 +3,8 @@
  * @type {Object}
  */
 
-export default {};
+export default {
+    wilddog: {
+        appid: "chatbot-wxa"
+    }
+};

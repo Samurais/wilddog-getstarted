@@ -4,7 +4,8 @@
   "description": "Wilddog Get started.",
   "main": "dist/app.js",
   "dependencies": {
-    "log4js": "^1.1.0"
+    "log4js": "^1.1.0",
+    "wilddog": "^2.4.2"
   },
   "devDependencies": {
     "@types/node": "^6.0.53",

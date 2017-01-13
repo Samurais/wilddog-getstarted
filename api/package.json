@@ -1,0 +1,28 @@
+{
+  "name": "wilddog-getstarted-app",
+  "version": "1.0.0",
+  "description": "Wilddog Get started.",
+  "main": "dist/app.js",
+  "dependencies": {
+    "log4js": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.53",
+    "ava": "^0.17.0",
+    "gulp": "^3.9.1",
+    "gulp-ava": "^0.15.0",
+    "gulp-nodemon": "^2.2.1",
+    "lodash": "^4.17.3",
+    "nodemon": "^1.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Samurais/wilddog-getstarted.git"
+  },
+  "scripts": {
+    "start": "node dist/app.js",
+    "test": "tsc && node_modules/.bin/ava dist/test"
+  },
+  "author": "Hai Liang Wang<hailiang.hl.wang@gmail.com>",
+  "license": "ISC"
+}

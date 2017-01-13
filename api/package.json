@@ -5,7 +5,8 @@
   "main": "dist/app.js",
   "dependencies": {
     "log4js": "^1.1.0",
-    "wilddog": "^2.4.2"
+    "wilddog": "^2.4.2",
+    "wilddog-token-generator": "^2.1.0"
   },
   "devDependencies": {
     "@types/node": "^6.0.53",

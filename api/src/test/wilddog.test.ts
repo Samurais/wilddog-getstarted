@@ -2,14 +2,16 @@
  * Test Wilddog Service
  */
 import { test } from 'ava'
-import wilddogRootRef from '../services/wilddog.service'
+import { wdSync, wdLogin } from '../services/wilddog.service'
 
-test.only.cb('Wilddog Service Test#Sync', t => {
+const wilddogRootRef = wdSync.ref()
+
+test.skip.cb('Wilddog Service Test#Sync', t => {
   wilddogRootRef.set({
-    'messageboard': {
-      'message2': {
+    'chatrooms': {
+      'message3': {
         'content': 'Wilddog, Cool!',
-        'presenter': 'Jack'
+        'presenter': 'hain'
       }
     }
   })
@@ -23,4 +25,17 @@ test.only.cb('Wilddog Service Test#Sync', t => {
       t.fail()
       t.end()
     })
+})
+
+test.only.cb('Wilddog Service#wdLogin', t => {
+    wdLogin()
+      .then(function(res){
+        t.pass()
+        t.end()
+      })
+      .catch(function(err){
+        console.log(err )
+        t.fail()
+        t.end()
+      })
 })
